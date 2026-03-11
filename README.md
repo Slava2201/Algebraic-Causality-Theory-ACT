@@ -1,6 +1,6 @@
 # Algebraic-Causality-Theory-ACT-A-Systematic-Review
 Algebraic Causality Theory (ACT): A Systematic Review
-```markdown
+
 # Algebraic Causality Theory (ACT): A Systematic Review and Formalized Development Plan
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
@@ -25,7 +25,7 @@ The theory provides a unified description of:
 
 ## 📚 Repository Structure
 
-```
+
 Algebraic-Causality-Theory-ACT/
 ├── docs/                           # Documentation
 │   ├── act_overview.pdf            # Comprehensive theory overview
@@ -71,7 +71,7 @@ Algebraic-Causality-Theory-ACT/
 ├── README.md                               # This file
 ├── LICENSE                                  # License information
 └── CITATION.cff                             # Citation information
-```
+
 
 ## 🔬 Key Theoretical Components
 
@@ -107,17 +107,17 @@ Algebraic-Causality-Theory-ACT/
 
 ### Installation
 
-```bash
+
 git clone https://github.com/yourusername/Algebraic-Causality-Theory-ACT.git
 cd Algebraic-Causality-Theory-ACT
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release -DENABLE_CUDA=ON  # -DENABLE_CUDA=OFF for CPU only
 make -j4
-```
+
 
 ### Quick Example
 
-```cpp
+
 #include "act/core/graph.hpp"
 #include "act/dirac/dirac_operator.hpp"
 #include "act/cosmology/friedmann.hpp"
@@ -146,7 +146,7 @@ int main() {
     
     return 0;
 }
-```
+
 
 ## 📊 Key Predictions
 
@@ -161,10 +161,10 @@ int main() {
 
 ## 🧪 Running Tests
 
-```bash
+
 cd build
 ctest --output-on-failure
-```
+
 
 ## 📈 Performance
 
@@ -195,14 +195,14 @@ Areas needing contributions:
 
 If you use ACT in your research, please cite:
 
-```bibtex
+
 @article{potapov2026algebraic,
   title={Algebraic Causality Theory (ACT): A Systematic Review and Formalized Development Plan},
   author={Potapov, V. N.},
   journal={arXiv preprint arXiv:2408.07651},
   year={2026}
 }
-```
+
 
 ## 📄 License
 
