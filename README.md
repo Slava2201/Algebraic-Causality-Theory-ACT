@@ -30,7 +30,7 @@ make -j4
 
 ## References
 For theoretical background, see the comprehensive preprint in the `docs/` folder (54 pages of formalism and proofs).
-git remote set-url origin https://github.com/Slava2201/act-engine.git
+
 
 ## License
 MIT License
