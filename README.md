@@ -1,4 +1,4 @@
-# Algebraic Causality Theory (ACT) Simulation Engine
+# ACT Simulation Engine
 
 ## Overview
 This repository contains the numerical implementation of the **Algebraic Causality Theory (ACT)**. The project focuses on simulating a discrete causal network of chronons and tetrahedra to study the emergence of gauge fields and dark matter density from the Dirac operator spectrum.
