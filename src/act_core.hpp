@@ -1,9 +1,9 @@
-%%writefile src/act_core.hpp
 #ifndef ACT_CORE_HPP
 #define ACT_CORE_HPP
 
 #include <vector>
 #include <complex>
+#include <new>      // Обязательно!
 
 namespace act {
 
@@ -16,10 +16,18 @@ struct Vertex {
     Complex psi[4];
     std::vector<int> tetrahedra;
 
-    // Добавим конструктор по умолчанию для стабильности
     Vertex() : id(0), octant(0) {
         for(int i=0; i<32; ++i) tau[i] = Complex(0,0);
         for(int i=0; i<4; ++i) psi[i] = Complex(0,0);
+    }
+
+    // Это исправит ошибку с вектором:
+    Vertex(const Vertex& other) {
+        id = other.id;
+        octant = other.octant;
+        for(int i=0; i<32; ++i) tau[i] = other.tau[i];
+        for(int i=0; i<4; ++i) psi[i] = other.psi[i];
+        tetrahedra = other.tetrahedra;
     }
 };
 
