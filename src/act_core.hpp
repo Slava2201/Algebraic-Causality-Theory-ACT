@@ -1,4 +1,4 @@
-%%writefile act_core.hpp
+%%writefile src/act_core.hpp
 #ifndef ACT_CORE_HPP
 #define ACT_CORE_HPP
 
@@ -15,6 +15,12 @@ struct Vertex {
     Complex tau[32];
     Complex psi[4];
     std::vector<int> tetrahedra;
+
+    // Добавим конструктор по умолчанию для стабильности
+    Vertex() : id(0), octant(0) {
+        for(int i=0; i<32; ++i) tau[i] = Complex(0,0);
+        for(int i=0; i<4; ++i) psi[i] = Complex(0,0);
+    }
 };
 
 struct Edge {
@@ -30,25 +36,8 @@ struct Tetrahedron {
 
 struct Graph {
     std::vector<Vertex> vertices;
-    std::vector<Edge> edges;
-    std::vector<Tetrahedron> tetrahedra;
 };
 
 } // namespace act
 
-#endif // ACT_CORE_HPP
-
-
-
-
-
-
-# 1. Компилируем наш код в исполняемый файл 'act_engine'
-!g++ main.cpp -o act_engine
-
-# 2. Запускаем скомпилированную программу
-!./act_engine
-
-
-
-
+#endif
